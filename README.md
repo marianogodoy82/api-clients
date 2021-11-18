@@ -31,6 +31,9 @@
 
 1. Run  mvn clean package
 2. Run  java -jar target/api-clients-final.jar
+                                           
+## How To See The UI of API
+http://localhost:8080/swagger-ui.html#/client-controller
 
 ## To Check BD
 http://localhost:8080/h2-console
