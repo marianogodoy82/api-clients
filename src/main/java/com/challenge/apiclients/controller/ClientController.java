@@ -21,12 +21,12 @@ public class ClientController {
         this.clientService = clientService;
     }
 
-    @PostMapping(value = "/createcliente")
+    @PostMapping(value = "/v1/createcliente")
     public void createClient(@RequestBody ClientDTO clientReq){
         clientService.createClient(clientReq);
     }
 
-    @GetMapping(value= "/kpidclientes")
+    @GetMapping(value= "/v1/kpidclientes")
     public ResponseEntity<ResultResponseDTO> getAverage() {
         Double average = clientService.getAverage();
         Double standardDeviation = clientService.getStandardDeviation();
@@ -36,7 +36,7 @@ public class ClientController {
         return ResponseEntity.ok(resultResponse);
     }
 
-    @GetMapping("/listclientes")
+    @GetMapping("/v1/listclientes")
     public List<Client> getListClient(){
         return clientService.listAll();
     }

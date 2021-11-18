@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.challenge</groupId>
     <artifactId>api-clients</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>final</version>
     <name>api-clients</name>
     <description>api-clients</description>
     <properties>
